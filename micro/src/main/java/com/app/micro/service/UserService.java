@@ -20,5 +20,13 @@ public class UserService {
     public User addUser(User user) {
         return this.userDatos.save(user);
     }
-
+    
+    public User buscarByYear(int valor) {
+    	return this.userDatos.findByYearUvtEquals(valor);
+    }
+    
+    public void actualizarJson(String path, int valor) {
+    	this.userDatos.serializar(valor);
+    	this.userDatos.actualizar(path, valor);
+    }
 }

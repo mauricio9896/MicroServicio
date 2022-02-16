@@ -17,7 +17,7 @@ public class User {
     private int yearUvt;
 	
 	@Column(name = "VAL_UVT")
-    private int valUvt;
+    private float valUvt;
     
 	@Column(name = "FECHA" )
 	private String fecha;
@@ -42,11 +42,11 @@ public class User {
 		this.yearUvt = yearUvt;
 	}
 
-	public int getValUvt() {
+	public float getValUvt() {
 		return valUvt;
 	}
 
-	public void setValUvt(int valUvt) {
+	public void setValUvt(float valUvt) {
 		this.valUvt = valUvt;
 	}
 
